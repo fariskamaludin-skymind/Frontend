@@ -3,9 +3,9 @@ on:
   push:
     branches: main
 
-  #  paths:
+    paths:
       # Triggered when only this path has code changes during push
-  #    - 'dist/classifai/**'
+      - 'dist/classifai/**'
 
 jobs:
   copy:
