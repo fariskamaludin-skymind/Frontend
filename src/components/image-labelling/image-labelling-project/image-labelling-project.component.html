@@ -23,7 +23,7 @@
                     <ng-container *ngFor="let thumbnail of _thumbnailList; index as i">
                         <div class="img-container" (click)="onClick(thumbnail, i)">
                             <div class="img-skeleton">
-                                <img imgLazyLoad class="img" [src]="thumbnail.img_thumbnail" />
+                                <img imgLazyLoad class="img" [src]="thumbnail.img_thumbnail" alt="Some textual description of foo.png" />
                             </div>
                             <div class="img-name">
                                 <label class="img-path">{{ thumbnail.img_path | fileNameSlice }}</label>

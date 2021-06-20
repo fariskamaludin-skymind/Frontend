@@ -14,8 +14,6 @@ jobs:
     steps:
     - name: Get latest code
       uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.PERSONAL_TOKEN }}
 
     - name: Use Node.js 14 LTS
       uses: actions/setup-node@v2
@@ -42,6 +40,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: ":package: Updated compiled codes"
+        push_options: --force
 
   copy:
     name: Copy job
