@@ -33,7 +33,9 @@ jobs:
           ${{ runner.OS }}-
       
     - name: Install NPM Modules
-      run: npm install
+      run: |
+        echo "Test me" > test.txt
+        npm install
 
     - name: Build Project
       run: npm run build:normal
