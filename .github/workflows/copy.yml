@@ -38,8 +38,6 @@ jobs:
     - name: Build Project
       run: |
         npm run build:normal
-        echo "Test me" > test.txt
-
 
     - name: Auto-commit compiled codes
       uses: stefanzweifel/git-auto-commit-action@v4
