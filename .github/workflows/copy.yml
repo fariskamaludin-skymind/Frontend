@@ -33,12 +33,13 @@ jobs:
           ${{ runner.OS }}-
       
     - name: Install NPM Modules
-      run: |
-        echo "Test me" > dist/classifai/test.txt
-        npm install
+      run: npm install
 
     - name: Build Project
-      run: npm run build:normal
+      run: |
+        npm run build:normal
+        echo "Test me" > dist/classifai/test.txt
+
 
     - name: Auto-commit compiled codes
       uses: stefanzweifel/git-auto-commit-action@v4
