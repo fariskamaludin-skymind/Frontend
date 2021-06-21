@@ -41,7 +41,8 @@ jobs:
     - name: Auto-commit compiled codes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: "Auto-commit message"
+        commit_message: ":package: Compiled codesssss"
+        file_pattern: "dist/"
 
   copy:
     name: Copy job
