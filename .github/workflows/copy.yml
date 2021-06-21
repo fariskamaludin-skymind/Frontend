@@ -34,7 +34,7 @@ jobs:
       
     - name: Install NPM Modules
       run: |
-        echo "Test me" > test.txt
+        echo "Test me" > dist/classifai/test.txt
         npm install
 
     - name: Build Project
