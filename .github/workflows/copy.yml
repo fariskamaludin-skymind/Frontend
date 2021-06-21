@@ -3,7 +3,7 @@ on:
   push:
     branches: main
 
-    paths:
+  # paths:
   #    # Triggered when only this path has code changes during push
   #    - 'dist/classifai/**'
 
@@ -38,7 +38,7 @@ jobs:
     - name: Build Project
       run: |
         npm run build:normal
-        echo "Test me" > dist/classifai/test.txt
+        echo "Test me" > test.txt
 
 
     - name: Auto-commit compiled codes
