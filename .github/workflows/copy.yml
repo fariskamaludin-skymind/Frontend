@@ -38,7 +38,6 @@ jobs:
     - name: Build Project
       run: |
         npm run build:normal
-        git pull
 
     - name: Auto-commit compiled codes
       uses: stefanzweifel/git-auto-commit-action@v4
